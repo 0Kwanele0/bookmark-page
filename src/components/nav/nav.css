@@ -98,6 +98,7 @@
   width: 90%;
   font-size: 26px;
   letter-spacing: 3px;
+  cursor: pointer;
 }
 
 .mob-menu {
@@ -118,7 +119,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 40px 0 0 0;
+  padding: 15px 0 0 0;
 }
 
 .mob-header {
@@ -136,8 +137,7 @@
 
 .mob-header img {
   color: white;
-  -webkit-filter: brightness(0.9);
-          filter: brightness(0.9);
+  cursor: pointer;
 }
 
 .mob-nav__btn {
@@ -146,11 +146,36 @@
   font-size: 22px;
   background: none;
   border: 3px solid white;
+  cursor: pointer;
   outline: none;
   border-radius: 8px;
   color: white;
   text-transform: uppercase;
   letter-spacing: 3.5px;
   font-weight: 600;
+}
+
+.mob-icons {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mob-icons img {
+  margin: 15px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.logomb {
+  width: 150px;
+}
+
+.close {
+  width: 35px;
 }
 /*# sourceMappingURL=nav.css.map */

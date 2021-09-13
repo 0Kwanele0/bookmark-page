@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './nav.css'
 import logo from '../../images/logo-bookmark.svg'
+import logoMB from '../../images/logo-bookmark.png'
 
 function Nav() {
     const [menu, setmenu] = useState(false)
@@ -17,12 +18,12 @@ function Nav() {
                 <li>Contact</li>
             </ul>
                 <button className="nav__btn">LogIn</button>
-                <img onClick={menuClick} className="nav__hamburger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="icon"/>
+                <img onClick={menuClick} className="nav__hamburger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="menu icon"/>
             </div>
             {menu && <div className="mob-menu">
             <div className="mob-header">
-                <img src={logo} alt="logo" />
-                <img onClick={menuClick} src="https://img.icons8.com/ios/50/ffffff/delete-sign.png"/>
+                <img className="logomb" src={logoMB}alt="logomb" />
+                <img className="close" onClick={menuClick} src="https://img.icons8.com/ios/50/ffffff/delete-sign.png" alt="menu close icon"/>
             </div>
             <ul className="mob-list">
                 <li>Features</li>
@@ -31,7 +32,11 @@ function Nav() {
                 <li>
                     <button className="mob-nav__btn">LogIn</button>
                 </li>
-            </ul>
+                </ul>
+                <div className="mob-icons">
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/facebook.png" alt="facebook"/>
+                    <img src="https://img.icons8.com/ios-glyphs/30/ffffff/twitter.png" alt="twitter"/>
+                </div>
         </div>}
         </div>
     )
