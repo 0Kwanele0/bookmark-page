@@ -11,6 +11,11 @@ function Nav() {
         <div className="menu">
             <div className="nav">
                 <img className="nav__logo" src={logo} alt="logo" />
+                <ul className="nav__list">
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>Contact</li>
+            </ul>
                 <button className="nav__btn">LogIn</button>
                 <img onClick={menuClick} className="nav__hamburger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="icon"/>
             </div>

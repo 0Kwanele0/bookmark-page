@@ -11,7 +11,17 @@
     &__logo{
         cursor: pointer;
     }
-    
+    &__list{
+        display: flex;
+        flex: 6;
+        justify-content: flex-end;
+        & li{
+            list-style: none;
+            text-transform: uppercase;
+            margin: 0 22px;
+            cursor: pointer;
+        }
+    }
     &__btn{
         background-color: hsl(0, 94%, 66%);
         text-transform: uppercase;
@@ -69,7 +79,7 @@
     top: 0;
     position: absolute;
     z-index: 2;
-    background-color: rgba(4, 10, 43, 0.836);
+    background-color: rgba(4, 10, 43, 0.856);
     height: 100vh;
     width: 100vw;
     display: flex;
