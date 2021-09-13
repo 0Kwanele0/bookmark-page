@@ -1,1 +1,56 @@
-/* No CSS *//*# sourceMappingURL=features.css.map */
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+}
+
+.features h3 {
+  font-size: 2.2rem;
+  margin: 5px;
+}
+
+.features p {
+  font-size: 1.2rem;
+  line-height: 28px;
+}
+
+.features__feature {
+  margin: 20px 0;
+}
+
+.features__feature img {
+  width: 100%;
+}
+
+.features__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.features__menu h5 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin: 0;
+  padding: 20px 0;
+  border-top: 1px solid rgba(128, 128, 128, 0.459);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+}
+/*# sourceMappingURL=features.css.map */
