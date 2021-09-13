@@ -1,1 +1,35 @@
-/* No CSS *//*# sourceMappingURL=showcase.css.map */
+.showcase {
+  padding: 40px 15px;
+}
+
+.showcase__illustration img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.showcase__text {
+  text-align: center;
+}
+
+.showcase__text h3 {
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  line-height: 42px;
+}
+
+.showcase__text p {
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+
+.showcase__btns button {
+  font-size: 20px;
+  padding: 22px 30px;
+  font-weight: 500;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: royalblue;
+  color: white;
+}
+/*# sourceMappingURL=showcase.css.map */
