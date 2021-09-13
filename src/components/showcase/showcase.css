@@ -1,5 +1,15 @@
 .showcase {
   padding: 40px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .showcase__illustration img {
@@ -9,6 +19,7 @@
 
 .showcase__text {
   text-align: center;
+  max-width: 600px;
 }
 
 .showcase__text h3 {
@@ -27,9 +38,70 @@
   padding: 22px 30px;
   font-weight: 500;
   margin: 5px;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
   background-color: royalblue;
   color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.showcase__btns button:nth-of-type(2) {
+  background-color: rgba(221, 221, 221, 0.644);
+  color: black;
+}
+
+.showcase__btns button:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+@media screen and (min-width: 960px) {
+  .showcase {
+    margin: 40px 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .showcase__text {
+    width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+  .showcase__text h3 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin: 5px 0;
+    font-weight: 500;
+  }
+  .showcase__text p {
+    font-size: 1.2rem;
+  }
+  .showcase__illustration {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 5px 0;
+    width: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media screen and (min-width: 1066px) {
+  .showcase {
+    margin: 50px 80px;
+  }
 }
 /*# sourceMappingURL=showcase.css.map */
