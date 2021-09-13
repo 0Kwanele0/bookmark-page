@@ -38,20 +38,34 @@
   text-transform: uppercase;
   margin: 0 22px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.nav__list li:hover {
+  color: #fa5757;
 }
 
 .nav__btn {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   background-color: #fa5757;
   text-transform: uppercase;
   color: white;
-  border: none;
   padding: 10px 30px;
   font-size: 14px;
   border-radius: 5px;
+  border: 1px solid red;
   margin: 0 40px;
   -webkit-box-shadow: 0 0 9px 2px rgba(128, 128, 128, 0.185);
           box-shadow: 0 0 9px 2px rgba(128, 128, 128, 0.185);
   cursor: pointer;
+}
+
+.nav__btn:hover {
+  background-color: transparent;
+  color: #fa5757;
+  border: 1px solid #fa5757;
 }
 
 @media screen and (max-width: 930px) {
@@ -99,6 +113,12 @@
   font-size: 26px;
   letter-spacing: 3px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.mob-list li:hover {
+  color: #fa5757;
 }
 
 .mob-menu {
@@ -132,6 +152,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 20px 0;
   width: 90%;
 }
 
@@ -153,13 +174,26 @@
   text-transform: uppercase;
   letter-spacing: 3.5px;
   font-weight: 600;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.mob-nav__btn:hover {
+  color: #fa5757;
+  border: 3px solid #fa5757;
 }
 
 .mob-icons {
   width: 50%;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -168,7 +202,15 @@
 .mob-icons img {
   margin: 15px;
   width: 40px;
+  height: 40px;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.mob-icons img:hover {
+  -webkit-transform: scale(110%);
+          transform: scale(110%);
 }
 
 .logomb {

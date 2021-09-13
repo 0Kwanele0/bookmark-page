@@ -1,16 +1,24 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import './nav.css'
 import logo from '../../images/logo-bookmark.svg'
 import logoMB from '../../images/logo-bookmark.png'
 
 function Nav() {
+    const hearder = useRef()
     const [menu, setmenu] = useState(false)
     function menuClick() {
         setmenu(!menu)
     }
+    useEffect(() => {
+        if (menu) {
+            hearder.current.style.opacity = 0
+        }else {
+            hearder.current.style.opacity = 1
+        }
+    }, [menu])
     return (
         <div className="menu">
-            <div className="nav">
+            <div ref={hearder} className="nav">
                 <img className="nav__logo" src={logo} alt="logo" />
                 <ul className="nav__list">
                 <li>Features</li>

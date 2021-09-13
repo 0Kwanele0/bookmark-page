@@ -21,19 +21,29 @@
             text-transform: uppercase;
             margin: 0 22px;
             cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover{
+                color: hsl(0, 94%, 66%);
+            }
         }
     }
     &__btn{
+        transition: all 0.2s ease;
         background-color: hsl(0, 94%, 66%);
         text-transform: uppercase;
         color: white;
-        border: none;
         padding: 10px 30px;
         font-size: 14px;
         border-radius: 5px;
+        border: 1px solid red;
         margin: 0 40px;
         box-shadow: 0 0 9px 2px rgba(128, 128, 128, 0.185);
         cursor: pointer;
+        &:hover{
+            background-color: transparent;
+            color: hsl(0, 94%, 66%);
+            border: 1px solid hsl(0, 94%, 66%);
+        }
     }
 }
 
@@ -74,6 +84,10 @@
         font-size: 26px;
         letter-spacing: 3px;
         cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover{
+            color: hsl(0, 94%, 66%);
+        }
     }
 }
 .mob-menu{
@@ -88,12 +102,12 @@
     flex-direction: column;
     align-items: center;
     padding: 15px 0 0 0;
-    
 }
 .mob-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 20px 0;
     width: 90%;
     & img{
         color: white;
@@ -113,15 +127,27 @@
     text-transform: uppercase;
     letter-spacing: 3.5px;
     font-weight: 600;
+    transition: all 0.2s ease;
+    &:hover{
+        color: hsl(0, 94%, 66%);
+        border: 3px solid hsl(0, 94%, 66%);
+    }
 }
 .mob-icons{
     width: 50%;
+    flex: 5;
     display: flex;
+    align-items: center;
     justify-content: center;
     & img{
         margin: 15px;
         width: 40px;
+        height: 40px;
         cursor: pointer;
+        transition: all 0.2s ease;
+        &:hover{
+            transform: scale(110%);
+        }
     }
 }
 
