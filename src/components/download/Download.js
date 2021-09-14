@@ -3,7 +3,7 @@ import './download.css'
 function Download() {
     return (
         <div>
-            <h2>download</h2>
+            <h2 className="dark sec-hearder">download</h2>
         </div>
     )
 }

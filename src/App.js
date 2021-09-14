@@ -1,3 +1,4 @@
+import './App.css'
 import Nav from './components/nav/Nav'
 import Showcase from './components/showcase/Showcase'
 import Features from './components/features/Features'
