@@ -15,12 +15,15 @@
 
 .features h3 {
   font-size: 2.2rem;
+  color: #252b46;
   margin: 5px;
 }
 
 .features p {
   font-size: 1.2rem;
   line-height: 28px;
+  color: #9194a1;
+  max-width: 600px;
 }
 
 .features__feature {
@@ -29,12 +32,44 @@
 
 .features__feature img {
   width: 100%;
+  max-width: 500px;
+  margin-bottom: 50px;
+}
+
+.features__feature h4 {
+  font-size: 1.9rem;
+  color: #252b46;
+  margin: 0;
+}
+
+.features__feature button {
+  font-size: 20px;
+  padding: 18px 30px;
+  font-weight: 500;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: royalblue;
+  color: #e9eaec;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.features__feature button:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+
+.features__des {
+  max-width: 600px;
 }
 
 .features__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 600px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -48,9 +83,47 @@
   font-weight: 500;
   text-transform: capitalize;
   cursor: pointer;
+  color: #9194a1;
+  font-weight: 400;
   margin: 0;
   padding: 20px 0;
   border-top: 1px solid rgba(128, 128, 128, 0.459);
   border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+  border-collapse: collapse;
+}
+
+@media screen and (min-width: 960px) {
+  .features__menu {
+    border-bottom: 1px solid rgba(145, 148, 161, 0.582);
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    max-width: 800px;
+  }
+  .features__menu h5 {
+    border: none;
+  }
+  .features__feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .features__feature img {
+    margin-bottom: 0;
+  }
+  .features__des {
+    width: 40%;
+    margin: 0 30px;
+  }
 }
 /*# sourceMappingURL=features.css.map */

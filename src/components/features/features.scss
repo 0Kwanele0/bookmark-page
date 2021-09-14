@@ -6,20 +6,50 @@
     text-align: center;
     & h3{
         font-size: 2.2rem;
+        color: hsl(229, 31%, 21%);
         margin: 5px;
     }
     & p{
         font-size: 1.2rem;
         line-height: 28px;
+        color: hsl(229, 8%, 60%);
+        max-width: 600px;
     }
     &__feature{
         margin: 20px 0;
         & img{
             width: 100%;
+            max-width: 500px;
+            margin-bottom: 50px;
         }
+        & h4{
+            font-size: 1.9rem;
+            color: hsl(229, 31%, 21%);
+            margin: 0;
+        }
+        & button{
+            font-size: 20px;
+            padding: 18px 30px;
+            font-weight: 500;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: royalblue;
+            color: rgb(233, 234, 236);
+            cursor: pointer;
+            transition: all 0.2s ease;
+            &:hover{
+                transform: scale(105%);
+            }
+
+        }
+    }
+    &__des{
+        max-width: 600px;
     }
     &__menu{
         display: flex;
+        max-width: 600px;
         flex-direction: column;
         margin: 50px 0;
         width: 100%;
@@ -28,10 +58,41 @@
             font-weight: 500;
             text-transform: capitalize;
             cursor: pointer;
+            color: hsl(229, 8%, 60%);
+            font-weight: 400;
             margin: 0;
             padding: 20px 0;
             border-top: 1px solid rgba(128, 128, 128, 0.459);
             border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+            border-collapse: collapse;
+        }
+    }
+}
+
+@media screen and (min-width:960px) {
+    .features{
+        &__menu{
+            border-bottom: 1px solid hsla(229, 8%, 60%, 0.582);
+            flex-direction: row;
+            justify-content: space-around;
+            max-width: 800px;
+            & h5{
+                border: none;
+            }
+        }
+        &__feature{
+            display: flex;
+            text-align: left;
+            justify-content: center;
+            align-items: center;
+            & img{
+                margin-bottom: 0;
+            }
+
+        }
+        &__des{
+            width: 40%;
+            margin: 0 30px;
         }
     }
 }
