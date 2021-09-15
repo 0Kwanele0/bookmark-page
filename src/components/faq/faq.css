@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=faq.css.map */
+.faq {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+  margin: 60px 0;
+}
+
+.faq .heading-para {
+  max-width: 600px;
+  font-size: 1.2rem;
+  line-height: 28px;
+  margin: 8px 0 40px;
+}
+
+.faq__question {
+  max-width: 640px;
+  width: 100%;
+  margin-bottom: -1px;
+  border-bottom: 1px solid rgba(6, 20, 61, 0.363);
+  border-top: 1px solid rgba(6, 20, 61, 0.363);
+}
+
+.faq__question .q {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq__question .q img {
+  width: 30px;
+  height: 30px;
+}
+
+.faq__question h4 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.faq__question p {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 28px;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+/*# sourceMappingURL=faq.css.map */
