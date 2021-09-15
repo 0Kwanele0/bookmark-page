@@ -12,8 +12,10 @@ function Nav() {
     useEffect(() => {
         if (menu) {
             hearder.current.style.opacity = 0
+            document.body.style.overflow = 'hidden'
         }else {
             hearder.current.style.opacity = 1
+            document.body.style.overflow = 'scroll'
         }
     }, [menu])
     return (
