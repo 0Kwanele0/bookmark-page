@@ -45,7 +45,7 @@ function EachFaq({myQuestion, myAnswer}) {
             para.current.style.display = "none"
             
         }
-    }, [view, open])
+    }, [ open])
     
     return (
         <div className="faq__question">
