@@ -16,21 +16,21 @@ function Download() {
                     <img src={chrome} alt="extension"/>
                     <h5 className="dark">Add to Chrome</h5>
                     <p className="light">Minimum version 62</p>
-                    <br/>
+                    <hr/>
                     <button>Add & Install Extension</button>
                 </section>
                 <section className="download__card">
                     <img src={fire} alt="extension"/>
                     <h5 className="dark">Add to Firefox</h5>
                     <p className="light">Minimum version 55</p>
-                    <br/>
+                    <hr />
                     <button>Add & Install Extension</button>
                 </section>
                 <section className="download__card">
                     <img src={opera} alt="extension"/>
                     <h5 className="dark">Add to Opera</h5>
                     <p className="light">Minimum version 46</p>
-                    <br/>
+                    <hr />
                     <button>Add & Install Extension</button>
                 </section>
             </div>

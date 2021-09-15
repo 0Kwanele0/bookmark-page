@@ -5,6 +5,11 @@
     padding: 40px 30px;
     text-align: center;
     margin: 60px 0;
+    &__line{
+        height: 5px;
+        margin: 5px 0;
+        background-color: royalblue;
+    }
     & .heading-para{
         max-width: 600px;
         font-size: 1.2rem;
@@ -20,6 +25,7 @@
     }
     &__card{
         max-width: 310px;
+        overflow-x: hidden;
         width: 100%;
         padding:50px 20px;
         border-radius: 10px;
@@ -71,4 +77,13 @@
             }
         }
     }
+}
+hr{
+    margin: 20px 0;
+    position: relative;
+    right: 0;
+    left: -30px;
+    width: 120%;
+    border-top: 8px dotted rgba(18, 25, 80, 0.041);
+    border-bottom: none;
 }
