@@ -1,1 +1,93 @@
-/* No CSS *//*# sourceMappingURL=news.css.map */
+.news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 30px;
+  text-align: center;
+  margin: 60px 0;
+  color: white;
+  background-color: #5368df;
+}
+
+.news h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.news h2 {
+  max-width: 550px;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.news form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 590px) {
+  .news form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    max-width: 600px;
+  }
+}
+
+.news input {
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 12px 5px;
+  margin: 15px;
+  outline: none;
+  border: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  font-family: inherit;
+}
+
+@media screen and (min-width: 590px) {
+  .news input {
+    width: 60%;
+  }
+}
+
+.news button {
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding: 12px 5px;
+  font-family: inherit;
+  width: 103%;
+  font-weight: 500;
+  color: white;
+  border-radius: 3px;
+  background-color: #fa5757;
+}
+
+@media screen and (min-width: 590px) {
+  .news button {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=news.css.map */
