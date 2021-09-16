@@ -14,6 +14,12 @@
     &__question{
         max-width: 640px;
         width: 100%;
+        cursor: pointer;
+        &:hover{
+            h4, img{
+                transform: translateY(-5px);
+            }
+        }
         & .q{
             display: flex;
             justify-content: space-between;
@@ -21,6 +27,7 @@
             & img{
                 width: 30px;
                 height: 30px;
+                transition: all 0.2s ease;
             }
         }
         margin-bottom: -1px;
@@ -30,6 +37,8 @@
             font-size: 1.3rem;
             font-weight: 400;
             text-align: left;
+            transition: all 0.3s ease;
+            
         }
         & p{
             text-align: left;
