@@ -14,6 +14,7 @@
         display: none;
     }
     &__logo{
+        -webkit-tap-highlight-color: transparent;
         cursor: pointer;
     }
     &__list{
@@ -21,6 +22,7 @@
         flex: 6;
         justify-content: flex-end;
         & li{
+            -webkit-tap-highlight-color: transparent;
             list-style: none;
             text-transform: uppercase;
             margin: 0 22px;
@@ -86,6 +88,7 @@
     transform: translateY(-20px);
     
     & li{
+        -webkit-tap-highlight-color: transparent;
         -webkit-touch-callout: none; /* iOS Safari */
         -webkit-user-select: none; /* Safari */
         -khtml-user-select: none; /* Konqueror HTML */
@@ -132,6 +135,7 @@
     width: 90%;
     & img{
         cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
     }
 }
 .mob-nav__btn{

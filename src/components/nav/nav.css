@@ -24,6 +24,7 @@
 }
 
 .nav__logo {
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
 
@@ -40,6 +41,7 @@
 }
 
 .nav__list li {
+  -webkit-tap-highlight-color: transparent;
   list-style: none;
   text-transform: uppercase;
   margin: 0 22px;
@@ -121,6 +123,7 @@
 }
 
 .mob-list li {
+  -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   /* iOS Safari */
   -webkit-user-select: none;
@@ -188,6 +191,7 @@
 
 .mob-header img {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .mob-nav__btn {

@@ -26,6 +26,7 @@
   max-width: 640px;
   width: 100%;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
   margin-bottom: -1px;
   border-bottom: 1px solid rgba(6, 20, 61, 0.363);
   border-top: 1px solid rgba(6, 20, 61, 0.363);
@@ -46,6 +47,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .faq__question .q img {
@@ -56,6 +58,7 @@
 }
 
 .faq__question h4 {
+  -webkit-tap-highlight-color: transparent;
   font-size: 1.3rem;
   font-weight: 400;
   color: #605b75;
@@ -81,6 +84,7 @@
   display: block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
   margin-bottom: 44px;
 }
 /*# sourceMappingURL=faq.css.map */

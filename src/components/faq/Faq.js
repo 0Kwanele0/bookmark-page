@@ -33,16 +33,20 @@ function EachFaq({myQuestion, myAnswer}) {
 
     useEffect(() => {
         if (open) {
-            para.current.style.display = "block"
             arrow.current.style.opacity = "0.2"
-            gsap.from(para.current, 0.5, {
-                display:"none",
-                opacity: 0,
-                y: -40,
-                ease: "slow(0.7, 0.7, false)"
+            gsap.to(para.current, 0.5, {
+                opacity: 1,
+                y: 0,
+                display: "block",
+                ease: "expo"
             })
         } else {
-            para.current.style.display = "none"
+            gsap.to(para.current, 0.5, {
+                opacity: 0,
+                y: -40,
+                ease: "expo",
+                display: "none"
+            })
             arrow.current.style.opacity = "1"
             
         }

@@ -38,6 +38,7 @@
         margin: 20px 0 10px 0;
         width: 100%;
         & h5{
+            -webkit-tap-highlight-color: transparent;
             font-size: 20px;
             font-weight: 500;
             text-transform: capitalize;
