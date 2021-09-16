@@ -21,7 +21,13 @@
             text-transform: uppercase;
             margin: 0 22px;
             cursor: pointer;
-            transition: all 0.2s ease;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+            transition: all 0.3s ease;
             &:hover{
                 color: hsl(0, 94%, 66%);
             }
@@ -74,7 +80,14 @@
     width: 90%;
     opacity: 0;
     transform: translateY(-20px);
+    
     & li{
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
         list-style: none;
         text-align: center;
         padding: 25px 0;
@@ -83,7 +96,7 @@
         text-transform: uppercase;
         font-weight: 300;
         width: 90%;
-        font-size: 26px;
+        font-size: 20px;
         letter-spacing: 3px;
         cursor: pointer;
         transition: all 0.2s ease;
@@ -92,6 +105,7 @@
         }
     }
 }
+
 .mob-menu{
     margin: 0;
     top: 0;
@@ -118,7 +132,7 @@
 .mob-nav__btn{
     padding: 14px 0;
     width: 100%;
-    font-size: 22px;
+    font-size: 20px;
     background: none;
     border: 3px solid rgb(217, 214, 228);
     cursor: pointer;

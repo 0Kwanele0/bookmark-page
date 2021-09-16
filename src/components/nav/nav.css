@@ -38,8 +38,18 @@
   text-transform: uppercase;
   margin: 0 22px;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .nav__list li:hover {
@@ -105,6 +115,16 @@
 }
 
 .mob-list li {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
   list-style: none;
   text-align: center;
   padding: 25px 0;
@@ -113,7 +133,7 @@
   text-transform: uppercase;
   font-weight: 300;
   width: 90%;
-  font-size: 26px;
+  font-size: 20px;
   letter-spacing: 3px;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
@@ -166,7 +186,7 @@
 .mob-nav__btn {
   padding: 14px 0;
   width: 100%;
-  font-size: 22px;
+  font-size: 20px;
   background: none;
   border: 3px solid #d9d6e4;
   cursor: pointer;

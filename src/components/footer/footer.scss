@@ -27,6 +27,12 @@
             font-weight: 400;
             cursor: pointer;
             transition: all 0.3s ease;
+            -webkit-touch-callout: none; /* iOS Safari */
+            -webkit-user-select: none; /* Safari */
+            -khtml-user-select: none; /* Konqueror HTML */
+            -moz-user-select: none; /* Old versions of Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
             &:hover{
             transform: translateY(-5px);
             }
