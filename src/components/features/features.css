@@ -104,6 +104,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    opacity: 0;
   }
   .features__feature img {
     margin-bottom: 0;

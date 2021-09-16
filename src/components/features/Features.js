@@ -4,6 +4,7 @@ import illu from '../../images/illustration-features-tab-1.svg'
 import illu2 from '../../images/illustration-features-tab-2.svg'
 import illu3 from '../../images/illustration-features-tab-3.svg'
 import BlueButton from '../BlueCutton/BlueButton'
+import gsap from 'gsap'
 
 function Features() {
     const [one, setone] = useState(true)
@@ -70,12 +71,22 @@ function Features() {
 
 export default Features
 
-
 function One() {
+    const [load1, setLoad1] = useState(false)
+    const mydiv = useRef()
+
+    function loads() {
+        setLoad1(true)
+        gsap.to(mydiv.current, 2, {
+            opacity: 1,
+            ease: "expo"
+        })
+        
+    }
     return (
-        <div className="features__feature">
-            <img src={illu} alt="feature illustration" />
-            <div className="features__des">
+        <div ref={mydiv} className="features__feature">
+            <img onLoad={loads} src={illu} alt="feature illustration" />
+            {load1 && <div className="features__des">
                 <h4>Bookmark in one click</h4>
                 <p>Organize your bookmarks however you click.
                     Our drag-and-drop interface gives you
@@ -83,36 +94,60 @@ function One() {
                     favourite site.
                 </p>
                 <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="More Info" />
-            </div>
+            </div>}
         </div>
     )
 }
 function Two() {
+    const [load2, setLoad2] = useState(false)
+    const mydiv = useRef()
+
+    function loads() {
+        setLoad2(true)
+        gsap.to(mydiv.current, 2, {
+            opacity: 1,
+            ease: "expo"
+        })
+    }
+
     return (
-        <div className="features__feature">
-            <img src={illu2} alt="feature illustration" />
-            <div className="features__des">
+        <div ref={mydiv} className="features__feature">
+            <img onLoad={loads} src={illu2} alt="feature illustration" />
+            {load2 && <div className="features__des">
                 <h4>Inteligent Search</h4>
                 <p>Our powerful search feature will
                     help you find your sites in no time at all.
                     No need to trawl through all your bookmarks.
                 </p>
                 <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="More Info" />
-            </div>
+            </div>}
         </div>
     )
 }
 function Three() {
+    const [load3, setLoad3] = useState(false)
+    const mydiv = useRef()
+
+
+    function loads() {
+        setLoad3(true)
+        gsap.to(mydiv.current, 2, {
+            opacity: 1,
+            ease: "expo",
+        })
+    }
+    
+
     return (
-        <div className="features__feature">
-            <img src={illu3} alt="feature illustration" />
-            <div className="features__des">
+        <div ref={mydiv} className="features__feature">
+            <img onLoad={loads} src={illu3} alt="feature illustration" />
+            {load3 && <div className="features__des">
                 <h4>Share your bookmarks</h4>
                 <p>Easily share your bookmarks and collections with others.
                     Create a sharable link that you can share at a click of a button.
                 </p>
                 <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="More Info" />
-            </div>
+            </div>}
         </div>
     )
 }
