@@ -24,6 +24,7 @@ export default Faq
 function EachFaq({myQuestion, myAnswer}) {
     const question = useRef()
     const para = useRef()
+    const arrow = useRef()
     const [open, setopen] = useState(false)
 
     function view() {
@@ -33,6 +34,7 @@ function EachFaq({myQuestion, myAnswer}) {
     useEffect(() => {
         if (open) {
             para.current.style.display = "block"
+            arrow.current.style.opacity = "0.2"
             gsap.from(para.current, 0.5, {
                 display:"none",
                 opacity: 0,
@@ -41,6 +43,7 @@ function EachFaq({myQuestion, myAnswer}) {
             })
         } else {
             para.current.style.display = "none"
+            arrow.current.style.opacity = "1"
             
         }
     }, [ open])
@@ -49,7 +52,7 @@ function EachFaq({myQuestion, myAnswer}) {
         <div className="faq__question">
             <div onClick={view} ref={question} className="q">
                 <h4 className="dark">{ myQuestion}</h4>
-                <img alt="dropdown" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-down-arrows-those-icons-fill-those-icons-1.png"/>
+                <img ref={arrow} alt="dropdown" src="https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-down-arrows-those-icons-fill-those-icons-1.png"/>
             </div>
             <p ref={para} className="light">{ myAnswer}</p>
         </div>
