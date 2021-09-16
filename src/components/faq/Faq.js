@@ -21,8 +21,6 @@ function Faq() {
 
 export default Faq
 
-
-
 function EachFaq({myQuestion, myAnswer}) {
     const question = useRef()
     const para = useRef()

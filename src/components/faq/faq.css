@@ -54,10 +54,11 @@
 
 .faq__question p {
   text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 28px;
   display: block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-bottom: 44px;
 }
 /*# sourceMappingURL=faq.css.map */
