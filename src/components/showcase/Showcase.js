@@ -15,7 +15,7 @@ function Showcase() {
     useEffect(() => {
         if (imaged) {
             show.current.style.height = "100%"
-            gsap.to(show.current, 2.3, {
+            gsap.to(show.current, 1.5, {
                 opacity: 1,
                 ease: "circ"
             })
