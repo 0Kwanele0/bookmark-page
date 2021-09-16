@@ -1,5 +1,7 @@
 import './showcase.css'
 import illustration from '../../images/illustration-hero.svg'
+import BlueButton from '../BlueCutton/BlueButton'
+
 
 function Showcase() {
     return (
@@ -16,7 +18,7 @@ function Showcase() {
                     Try it for free
                 </p>
                 <div className="showcase__btns">
-                    <button>Get it on Chrome</button>
+                    <BlueButton text="Get it on Chrome" />
                     <button>Get it on Firefox</button>
                 </div>
             </div>

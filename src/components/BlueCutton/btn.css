@@ -1,0 +1,19 @@
+.main-btn {
+  font-size: 16px;
+  padding: 18px 20px;
+  font-weight: 600;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: royalblue;
+  color: #e9eaec;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.main-btn:hover {
+  -webkit-transform: scale(105%);
+          transform: scale(105%);
+}
+/*# sourceMappingURL=btn.css.map */

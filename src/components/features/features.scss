@@ -24,22 +24,7 @@
             color: hsl(229, 31%, 21%);
             margin: 0;
         }
-        & button{
-            font-size: 20px;
-            padding: 18px 30px;
-            font-weight: 500;
-            margin: 5px;
-            border-radius: 5px;
-            border: none;
-            background-color: royalblue;
-            color: rgb(233, 234, 236);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            &:hover{
-                transform: scale(105%);
-            }
-
-        }
+        
     }
     &__des{
         max-width: 600px;

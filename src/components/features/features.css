@@ -38,25 +38,6 @@
   margin: 0;
 }
 
-.features__feature button {
-  font-size: 20px;
-  padding: 18px 30px;
-  font-weight: 500;
-  margin: 5px;
-  border-radius: 5px;
-  border: none;
-  background-color: royalblue;
-  color: #e9eaec;
-  cursor: pointer;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-}
-
-.features__feature button:hover {
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
-}
-
 .features__des {
   max-width: 600px;
 }

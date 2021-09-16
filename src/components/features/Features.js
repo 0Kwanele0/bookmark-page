@@ -3,6 +3,7 @@ import './features.css'
 import illu from '../../images/illustration-features-tab-1.svg'
 import illu2 from '../../images/illustration-features-tab-2.svg'
 import illu3 from '../../images/illustration-features-tab-3.svg'
+import BlueButton from '../BlueCutton/BlueButton'
 
 function Features() {
     const [one, setone] = useState(true)
@@ -81,7 +82,7 @@ function One() {
                     complete control over how you manage your
                     favourite site.
                 </p>
-                <button>More info</button>
+                <BlueButton text="More Info" />
             </div>
         </div>
     )
@@ -96,7 +97,7 @@ function Two() {
                     help you find your sites in no time at all.
                     No need to trawl through all your bookmarks.
                 </p>
-                <button>More info</button>
+                <BlueButton text="More Info" />
             </div>
         </div>
     )
@@ -110,7 +111,7 @@ function Three() {
                 <p>Easily share your bookmarks and collections with others.
                     Create a sharable link that you can share at a click of a button.
                 </p>
-                <button>More info</button>
+                <BlueButton text="More Info" />
             </div>
         </div>
     )
