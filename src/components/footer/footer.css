@@ -1,5 +1,5 @@
 .footer {
-  padding: 80px 30px;
+  padding: 80px 80px;
   text-align: center;
   background-color: #252b46;
   display: -webkit-box;
@@ -47,6 +47,13 @@
   text-transform: uppercase;
   font-weight: 400;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__menu li:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .footer__icons {
@@ -61,6 +68,13 @@
 .footer__icons img {
   margin: 10px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer__icons img:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 @media screen and (max-width: 690px) {

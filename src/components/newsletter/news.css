@@ -86,8 +86,8 @@
   color: white;
   border-radius: 3px;
   background-color: #fa5757;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .news button:hover {

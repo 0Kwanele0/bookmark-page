@@ -1,5 +1,5 @@
 .footer{
-    padding: 80px 30px;
+    padding: 80px 80px;
     text-align: center;
     background-color: hsl(229, 31%, 21%);
     display: flex;
@@ -26,6 +26,10 @@
             text-transform: uppercase;
             font-weight: 400;
             cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+            transform: translateY(-5px);
+            }
         }
     }
     &__icons{
@@ -34,6 +38,10 @@
         & img{
             margin: 10px;
             cursor: pointer;
+            transition: all 0.3s ease;
+            &:hover{
+            transform: translateY(-5px);
+            }
         }
     }
 }
