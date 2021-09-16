@@ -12,6 +12,7 @@
   padding: 40px 30px;
   text-align: center;
   margin: 60px 0;
+  overflow-x: hidden;
 }
 
 .faq .heading-para {

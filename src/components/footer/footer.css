@@ -8,6 +8,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  overflow-x: hidden;
 }
 
 .footer__con {
@@ -22,7 +23,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
   max-width: 1300px;
 }
 

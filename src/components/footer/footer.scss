@@ -4,13 +4,15 @@
     background-color: hsl(229, 31%, 21%);
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
     &__con{
         display: flex;
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        width: 100%;
+        width: 90%;
         max-width: 1300px;
+        
     }
     &__logo{
         width: 180px;

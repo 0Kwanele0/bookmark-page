@@ -8,6 +8,7 @@
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  overflow-x: hidden;
 }
 
 .main-btn:hover {

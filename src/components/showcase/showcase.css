@@ -12,6 +12,7 @@
           align-items: center;
   opacity: 0;
   height: 100vh;
+  overflow-x: hidden;
 }
 
 .showcase__illustration img {
