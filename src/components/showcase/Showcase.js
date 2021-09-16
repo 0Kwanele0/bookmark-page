@@ -19,7 +19,7 @@ function Showcase() {
                 ease: "circ"
             })
         }
-    }, [my])
+    }, [imaged])
     return (
             <div ref={show} className="showcase">
                 <div className="showcase__illustration">
