@@ -7,6 +7,7 @@ import gsap from 'gsap'
 function Nav() {
     const hearder = useRef()
     const theList = useRef()
+    const themenu = useRef()
     const icons = useRef()
     const [menu, setmenu] = useState(false)
     function menuClick() {
@@ -14,11 +15,18 @@ function Nav() {
     }
     useEffect(() => {
         if (menu) {
-            hearder.current.style.opacity = 0
+            gsap.to(hearder.current, 2,{
+                opacity: 0,
+                ease: "power2.out",
+            })
             gsap.to(theList.current, 0.5 ,{
                 opacity: 1,
                 y: 30,
                 delay: 0.2,
+                ease: "power2.out",
+            })
+            gsap.to(themenu.current, 1 ,{
+                opacity: 1,
                 ease: "power2.out",
             })
             gsap.to(icons.current,1 ,{
@@ -28,8 +36,11 @@ function Nav() {
                 ease: "power2.out",
             })
             document.body.style.overflow = 'hidden'
-        }else {
-            hearder.current.style.opacity = 1
+        } else {
+            gsap.to(hearder.current, 2,{
+                opacity: 1,
+                ease: "power2.out",
+            })
             document.body.style.overflow = 'scroll'
         }
     }, [menu])
@@ -45,7 +56,7 @@ function Nav() {
                 <button className="nav__btn">LogIn</button>
                 <img onClick={menuClick} className="nav__hamburger" src="https://img.icons8.com/ios/50/000000/menu.png" alt="menu icon"/>
             </div>
-            {menu && <div className="mob-menu">
+            {menu && <div ref={themenu} className="mob-menu">
             <div className="mob-header">
                 <img className="logomb" src={logoMB}alt="logomb" />
                 <img className="close" onClick={menuClick} src="https://img.icons8.com/ios/50/ffffff/delete-sign.png" alt="menu close icon"/>

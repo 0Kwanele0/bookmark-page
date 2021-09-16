@@ -1,4 +1,5 @@
 .nav {
+  opacity: 0;
   margin: 20px 75px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +146,7 @@
 }
 
 .mob-menu {
+  opacity: 0;
   margin: 0;
   top: 0;
   position: absolute;
