@@ -15,14 +15,16 @@ function Nav() {
     useEffect(() => {
         if (menu) {
             hearder.current.style.opacity = 0
-            gsap.from(theList.current, 0.5 ,{
-                opacity: 0,
-                y: -30,
+            gsap.to(theList.current, 0.5 ,{
+                opacity: 1,
+                y: 30,
+                delay: 0.2,
                 ease: "power2.out",
             })
-            gsap.from(icons.current,1 ,{
-                opacity: 0,
-                y: -70,
+            gsap.to(icons.current,1 ,{
+                opacity: 1,
+                y: 20,
+                delay: 0.8,
                 ease: "power2.out",
             })
             document.body.style.overflow = 'hidden'

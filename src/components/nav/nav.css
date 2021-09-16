@@ -99,14 +99,17 @@
           align-items: center;
   padding: 10px;
   width: 90%;
+  opacity: 0;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 .mob-list li {
   list-style: none;
   text-align: center;
   padding: 25px 0;
-  color: white;
-  border-top: 1px solid rgba(128, 128, 128, 0.795);
+  color: #d9d6e4;
+  border-top: 1px solid rgba(217, 214, 228, 0.274);
   text-transform: uppercase;
   font-weight: 300;
   width: 90%;
@@ -126,7 +129,7 @@
   top: 0;
   position: absolute;
   z-index: 2;
-  background-color: rgba(4, 10, 43, 0.911);
+  background-color: rgba(11, 18, 56, 0.966);
   height: 100vh;
   width: 100vw;
   display: -webkit-box;
@@ -157,7 +160,6 @@
 }
 
 .mob-header img {
-  color: white;
   cursor: pointer;
 }
 
@@ -166,11 +168,11 @@
   width: 100%;
   font-size: 22px;
   background: none;
-  border: 3px solid white;
+  border: 3px solid #d9d6e4;
   cursor: pointer;
   outline: none;
   border-radius: 8px;
-  color: white;
+  color: #d9d6e4;
   text-transform: uppercase;
   letter-spacing: 3.5px;
   font-weight: 600;
@@ -197,6 +199,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .mob-icons img {
