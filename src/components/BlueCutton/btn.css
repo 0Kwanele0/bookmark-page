@@ -5,15 +5,13 @@
   margin: 5px;
   border-radius: 5px;
   border: none;
-  background-color: royalblue;
-  color: #e9eaec;
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 .main-btn:hover {
-  -webkit-transform: scale(105%);
-          transform: scale(105%);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 /*# sourceMappingURL=btn.css.map */

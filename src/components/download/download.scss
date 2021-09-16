@@ -43,21 +43,7 @@
             margin: 8px 0;
             font-size: 1.2rem;
         }
-        & button{
-            font-size: 16px;
-            padding: 18px 20px;
-            font-weight: 600;
-            margin: 5px;
-            border-radius: 5px;
-            border: none;
-            background-color: royalblue;
-            color: rgb(233, 234, 236);
-            cursor: pointer;
-            transition: all 0.2s ease;
-            &:hover{
-                transform: scale(105%);
-            }
-        }
+        
     }
 }
 @media screen and (min-width:1230px) {

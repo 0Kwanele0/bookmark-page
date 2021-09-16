@@ -20,7 +20,7 @@ function Download() {
                             <h5 className="dark">{ item.call}</h5>
                             <p className="light">{item.version}</p>
                             <hr/>
-                            <BlueButton text="Add & Install Extension" />
+                            <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="Add & Install Extension" />
                         </section>
                     )
                 })}

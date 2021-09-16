@@ -18,8 +18,8 @@ function Showcase() {
                     Try it for free
                 </p>
                 <div className="showcase__btns">
-                    <BlueButton text="Get it on Chrome" />
-                    <button>Get it on Firefox</button>
+                    <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="Get it on Chrome" />
+                    <BlueButton textColor="rgb(62, 63, 65)" color="rgba(221, 221, 221, 0.644)" text="Get it on Chrome" />
                 </div>
             </div>
         </div>

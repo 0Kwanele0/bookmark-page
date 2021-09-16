@@ -82,7 +82,7 @@ function One() {
                     complete control over how you manage your
                     favourite site.
                 </p>
-                <BlueButton text="More Info" />
+                <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="More Info" />
             </div>
         </div>
     )
@@ -97,7 +97,7 @@ function Two() {
                     help you find your sites in no time at all.
                     No need to trawl through all your bookmarks.
                 </p>
-                <BlueButton text="More Info" />
+                <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="More Info" />
             </div>
         </div>
     )
@@ -111,7 +111,7 @@ function Three() {
                 <p>Easily share your bookmarks and collections with others.
                     Create a sharable link that you can share at a click of a button.
                 </p>
-                <BlueButton text="More Info" />
+                <BlueButton textColor="rgb(233, 234, 236)" color="hsl(231, 69%, 60%)" text="More Info" />
             </div>
         </div>
     )

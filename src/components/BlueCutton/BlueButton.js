@@ -3,7 +3,7 @@ import './btn.css'
 
 function BlueButton(props) {
     return (
-        <button className="main-btn">{ props.text }</button>
+        <button style={{ backgroundColor:`${props.color}`, color:`${props.textColor} `}} className="main-btn">{ props.text }</button>
     )
 }
 
