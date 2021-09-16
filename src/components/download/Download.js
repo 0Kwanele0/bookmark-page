@@ -2,6 +2,7 @@ import './download.css'
 import chrome from '../../images/logo-chrome.svg'
 import fire from '../../images/logo-firefox.svg'
 import opera from '../../images/logo-opera.svg'
+import BlueButton from '../BlueCutton/BlueButton'
 
 function Download() {
     return (
@@ -12,30 +13,38 @@ function Download() {
                 you've got a favourite you'de like us to prioritize.
             </p>
             <div className="download__cards">
-                <section className="download__card">
-                    <img src={chrome} alt="extension"/>
-                    <h5 className="dark">Add to Chrome</h5>
-                    <p className="light">Minimum version 62</p>
-                    <hr/>
-                    <button>Add & Install Extension</button>
-                </section>
-                <section className="download__card">
-                    <img src={fire} alt="extension"/>
-                    <h5 className="dark">Add to Firefox</h5>
-                    <p className="light">Minimum version 55</p>
-                    <hr />
-                    <button>Add & Install Extension</button>
-                </section>
-                <section className="download__card">
-                    <img src={opera} alt="extension"/>
-                    <h5 className="dark">Add to Opera</h5>
-                    <p className="light">Minimum version 46</p>
-                    <hr />
-                    <button>Add & Install Extension</button>
-                </section>
+                {myBrowsers.map((item, key) => {
+                    return(
+                        <section key={key} className="download__card">
+                            <img src={item.icon} alt="extension"/>
+                            <h5 className="dark">{ item.call}</h5>
+                            <p className="light">{item.version}</p>
+                            <hr/>
+                            <BlueButton text="Add & Install Extension" />
+                        </section>
+                    )
+                })}
             </div>
         </div>
     )
 }
 
 export default Download
+
+const myBrowsers = [
+    {
+        call: "Add to Chrome",
+        version: "Minimum version 62",
+        icon: chrome
+    },
+    {
+        call: "Add to FireFox",
+        version: "Minimum version 55",
+        icon: fire
+    },
+    {
+        call: "Add to Opera",
+        version: "Minimum version 46",
+        icon: opera
+    },
+]
